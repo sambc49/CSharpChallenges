@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpChallenges
 {
@@ -6,7 +7,19 @@ namespace CSharpChallenges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var names = new List<string>()
+            {
+                "Sam",
+                "Dave",
+                "Bob",
+                "Robert",
+                "James"
+            };
+            foreach (var name in names)
+            {
+                Console.WriteLine("My name is {0}", name);
+            }
+
         }
     }
 }
