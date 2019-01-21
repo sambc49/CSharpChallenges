@@ -7,18 +7,16 @@ namespace CSharpChallenges
     {
         static void Main(string[] args)
         {
-            var names = new List<string>()
+            var users = new List<User>
             {
-                "Sam",
-                "Dave",
-                "Bob",
-                "Robert",
-                "James"
+                new User { FirstName = "Dave", Surname = "Thomas" },
+                new User { FirstName = "Joe", Surname = "Bloggs" }
             };
-            foreach (var name in names)
+            foreach (var user in users)
             {
-                Console.WriteLine("My name is {0}", name);
+                Console.WriteLine("Hello! My name is {0} {1}", user.FirstName, user.Surname);
             }
+
 
         }
     }
